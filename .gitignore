@@ -1,0 +1,58 @@
+# Environment — contains API keys and node credentials
+.env
+swarm_core/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Runtime state — generated on first run
+vector_memory.json
+vector_memory.usearch
+agent_memories.json
+agent_reflections.json
+agent_reputation.json
+consolidated_memory.json
+
+# Benchmark datasets — fetch with bench/fetch_data.py
+bench/gsm8k_test.json
+bench/truthfulqa_mc.json
+bench/mmlu.json
+bench/strategyqa.json
+
+# Eval results and logs
+bench/evalcard_*.json
+!bench/evalcard_20260626_111506.json
+bench/results_*.json
+bench/*.log
+bench/run.log
+
+# Server / test output
+server_out.txt
+server_err.txt
+srv.out
+srv.err
+swarm_diag.log
+jetson_watchdog.log
+evalrun_*.log
+gate_3node_*.log
+test_3node_out.txt
+test_req.json
+
+# Reports
+reports/
+
+# Screenshots
+*.png
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
